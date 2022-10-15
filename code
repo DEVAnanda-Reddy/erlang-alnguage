@@ -1,0 +1,14 @@
+% hello world program
+-module(helloworld).
+-export([start/0]).
+
+start() ->
+
+   X = 22, 
+   Y = 7, 
+
+   Res1 = X / Y, 
+   Res2 = Res1-3,
+   Res3 = Res2 rem 1000,
+   
+   io:fwrite("~w~n",[Res3]).
